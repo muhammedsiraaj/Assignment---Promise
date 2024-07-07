@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #container{
+         height: 100vh;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 25px;
+         background-color: 10px;
+         overflow-y: auto;   
+        }
+        #button{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        }
+        .flags{
+        display: flex;
+        }
+        .details{
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div onclick="getCountryData()" id="button"><button>Get country data</button></div>
     
+    <div id="container">
+        
+    </div>
 
     <script src="./script.js"></script>
 </body>
